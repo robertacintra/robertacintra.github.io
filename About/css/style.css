@@ -31,6 +31,12 @@ body {
     text-transform: uppercase;
 }
 
+.projeto {
+    text-decoration: none;
+    color: #fc4949;
+    font-size: 11px;
+}
+
 .logo {
     width: 150px;
     margin: 0 20px;
