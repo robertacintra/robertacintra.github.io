@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tabela</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <table class="planos">
+        <thead><!-- table head -->
+            <tr class="cabecalho"><!-- table row -->
+                <th rowspan="3"></th> <!-- célula de título vazia -->
+                <th class="autonomo">Autônomos e freelas</th> <!-- th são células de título!! -->
+                <th colspan="3" class="pequenas-empresas">Pequenas empresas que precisam de blablabla</th> <!-- espaço que a coluna ocupa -->
+            </tr>
+            <tr class="linha-profissoes">
+                <th>Autônomos</th>
+                <th>Começo</th>
+                <th>Essenciais</th>
+                <th>Mais</th>
+            </tr>
+            <tr class="linha-botoes">
+                <th>
+                    <button class="comprar">Comprar</button>
+                </th>
+                <th>
+                    <button class="comprar">Comprar</button>
+                </th>
+                <th>
+                    <button class="comprar">Comprar</button>
+                </th>
+                <th>
+                    <button class="comprar">Comprar</button>
+                </th>
+            </tr>
+        </thead>
+<!-- tbody chama tr, (>) seletor por referência, nth-child(odd) seleciona todas as ímpares -->
+        <tbody><!-- table body -->
+            <tr>
+                <td>Separate business</td> <!-- table data -->
+                <td class="check-azul">✓</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Estimate</td>
+                <td class="check-azul">✓</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Track deductible</td>
+                <td class="check-azul">✓</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Deduce</td>
+                <td class="check-azul">✓</td>
+                <td class="check-verde">✓</td>
+                <td class="check-verde">✓</td>
+                <td class="check-verde">✓</td>
+            </tr>
+                <td>Split</td>
+                <td class="check-azul">✓</td>
+                <td class="check-verde">✓</td>
+                <td class="check-verde">✓</td>
+                <td class="check-verde">✓</td>
+            <tr>
+                <td>Blablablabla</td>
+                <td></td>
+                <td class="check-verde">✓</td>
+                <td class="check-verde">✓</td>
+                <td class="check-verde">✓</td>
+            </tr>
+            <tr>
+                <td>Do a double flip</td>
+                <td></td>
+                <td class="check-verde">✓</td>
+                <td class="check-verde">✓</td>
+                <td class="check-verde">✓</td>
+            </tr>
+            <tr>
+                <td>Create invoices & estimates</td>
+                <td></td>
+                <td class="check-verde">✓</td>
+                <td class="check-verde">✓</td>
+                <td class="check-verde">✓</td>
+            </tr>
+        
+        </tbody>
+    </table>
+
+</body>
+</html>

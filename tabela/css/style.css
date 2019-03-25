@@ -1,0 +1,65 @@
+/* BODY */
+th, td, tr {
+    border-right: 1px solid #cccccc;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: #dfdfdf;
+}
+
+.planos { /* Classe de <table> */
+    margin: 0 auto;
+    border-collapse: collapse; /* mescla as células */
+    text-align: center;
+    border-bottom: 1px solid #cccccc;
+}
+
+.autonomo {
+    background-color: #161aff;
+}
+
+.pequenas-empresas {
+    background-color: #00ce3a;
+}
+
+tr td:first-child {
+    text-align: left;
+}
+
+.comprar {
+    border: none;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5%;
+    background-color: #e40000;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 11px;
+}
+
+.linha-botoes > th {
+    padding: 10px 0;
+    border-top: 0;
+}
+
+.check-azul {
+    color: #1214b1;
+}
+
+.check-verde {
+    color: #00b834;
+}
+
+.linha-profissoes > th {
+    border-bottom: 0;
+}
+
+.cabecalho th {
+    font-size: 12px;
+    color: #ffffff;
+    padding: 10px;
+}
