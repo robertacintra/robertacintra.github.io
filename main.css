@@ -1,8 +1,13 @@
 @charset "UTF-8";
 
+html {
+    min-height: 100%;
+}
+
 body {
     margin: 0;
     font-family: 'Questrial', sans-serif;
+    color: #f0f8ff;
 }
 
 a {
@@ -19,24 +24,13 @@ h6 {
     color:#3a144d;
 }
 
-header {
-    background-color: #7E459B;
-    min-height: 20px;
-    text-align: center;
-    margin-top: 0px; 
-    padding: 10px 0px 0px 10px;
-    font-family: 'Questrial', sans-serif;
-}
-
 .main {
-    margin: 0px 200px;
+    margin: 0px 400px;
 }
 
 .welcome {
     background-color:#fff;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
 }
 
 .doodle-images {
@@ -46,17 +40,24 @@ header {
 .doodle-images:hover {
     background-color: #FF9A8B;
     background-image: linear-gradient(135deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
-    transition: background 5s ease-in;    
     border-radius: 20%;
-    -webkit-transition: background 5s ease-in;
-    -moz-transition: background 5s ease-in;
-    -o-transition: background 5s ease-in;
 }
 
 .bg {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 30px 0;
+    background-color: #af83c5;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards-column {
+    flex-direction: row;
 }
 
 .card {
@@ -74,14 +75,31 @@ header {
     padding-left: 40px;
 }
 
+.fotinho img {
+    background-size: cover;
+    border-radius: 50%;
+    max-width: 300px;
+}
+
 .bg-subcategories {
-    background-color: #FF99AC;
+    background-color: #a596963a;
+    max-width: 600px;
 }
 
 .subcategories {
-    color:#f7ecf0;
+    color:#ffffff;
     text-transform: lowercase;
-    width: 100%;
+    font-size: 14px;
+}
+
+.typewrite {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.sobremin {
+    max-width: 500px;
 }
 
 .styled-text {
@@ -90,12 +108,18 @@ header {
     font-weight: 700;
 }
 
+.bg-tecnologias {
+    background-color: #FF99AC;
+    color: gray;
+    margin: 0;
+    padding: 30px 30px;
+}
+
 /*inicio do estilo menu*/
 
-#menu{
-    text-align: center; /*alinhamento do texto*/
-    padding: 15px; /*espaço entre a borda e o conteúdo do elemento*/
-    background-color: #f4ecf8; /*cor de fundo*/
+#menu {
+    padding: 15px;
+    background-color: #a562c7;
     color:#3a144d;
 }
 
@@ -126,13 +150,17 @@ a:hover {
 }
 
 #sobre {
-    background-color: #e2ccd8; /*cor de fundo*/
+    background-color: #535353;
     padding: 40px;
 }
 
 #hobbies {
     background-color: #fff; /*cor de fundo*/
     padding: 40px;
+}
+
+.hobbies {
+    margin: 0;
 }
 
 .icones {
