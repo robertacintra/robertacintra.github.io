@@ -8,6 +8,7 @@ body {
     margin: 0;
     font-family: 'Questrial', sans-serif;
     color: #f0f8ff;
+    scrollbar-color: rgb(253, 148, 148);
 }
 
 a {
@@ -92,8 +93,16 @@ h6 {
     background-color: #a596963a;
     max-width: 600px;
 }
+.bg-subcategories--tec {
+    background-color: #f5e4e4b7;
+}
 
 .subcategories {
+    color:#302f2f;
+    text-transform: lowercase;
+    font-size: 14px;
+}
+.subcategories--tec {
     color:#ffffff;
     text-transform: lowercase;
     font-size: 14px;
@@ -103,6 +112,9 @@ h6 {
     color: #ffffff;
     font-size: 14px;
     font-weight: 100;
+}
+.typewrite--tec {
+    color: #838282;
 }
 
 .sobremin {
@@ -119,7 +131,7 @@ h6 {
     background-color: #FF99AC;
     color: gray;
     margin: 0;
-    padding: 30px 30px;
+    padding: 30px 90px;
 }
 
 /*inicio do estilo menu*/
@@ -128,6 +140,7 @@ h6 {
     padding: 15px;
     background-color: #a562c7;
     color:#3a144d;
+    margin: -120px 0 121px 0;
 }
 
 /*fim do estilo do menu*/  
@@ -145,7 +158,7 @@ h6 {
 
 a:hover {
     background-position: right center; 
-    color: #af83c5;
+    color: #e4bcf8;
     text-decoration: none;
 }
 
@@ -198,3 +211,84 @@ footer p {
 }
 
 /* final do estilo footer */
+
+/* background animation */
+@-webkit-keyframes bg-scrolling-reverse {
+    100% {
+        background-position: 50px 50px;
+    }
+}
+@-moz-keyframes bg-scrolling-reverse {
+    100% {
+        background-position: 50px 50px;
+    }
+}
+@-o-keyframes bg-scrolling-reverse {
+    100% {
+        background-position: 50px 50px;
+    }
+}
+@keyframes bg-scrolling-reverse {
+    100% {
+        background-position: 50px 50px;
+    }
+}
+@-webkit-keyframes bg-scrolling {
+    0% {
+        background-position: 50px 50px;
+    }
+}
+@-moz-keyframes bg-scrolling {
+    0% {
+        background-position: 50px 50px;
+    }
+}
+@-o-keyframes bg-scrolling {
+    0% {
+        background-position: 50px 50px;
+    }
+}
+@keyframes bg-scrolling {
+    0% {
+        background-position: 50px 50px;
+    }
+}
+  /* Main styles */
+body {
+    margin-top: 7.5rem;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+    -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+    /* Safari 4+ */
+    -moz-animation: bg-scrolling-reverse 0.92s infinite;
+    /* Fx 5+ */
+    -o-animation: bg-scrolling-reverse 0.92s infinite;
+    /* Opera 12+ */
+    animation: bg-scrolling-reverse 0.92s infinite;
+    /* IE 10+ */
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+/* scrollbar */
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #f6f6f7 #979797;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #979797;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #f6f6f7;
+    border-radius: 20px;
+    border: 3px solid #979797;
+}
