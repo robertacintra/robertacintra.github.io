@@ -1,17 +1,6 @@
-* {
-    font-family: 'Ubuntu', sans-serif;
-}
-
-body {
-    margin: 0;
-}
-
-.navegacao {
+.library {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    box-shadow: 0.3px 0.3px 0.3px 4px rgba(0, 0, 0, 0.15);
+    justify-content: space-around;
 }
 
 .menu {
